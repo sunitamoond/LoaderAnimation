@@ -43,7 +43,7 @@ public class LoaderAnimation: UIView {
     }
     
     /// A CAShapeLayerLineCap value that constains the line cap of progress line.
-    var lineCap: String = kCALineCapRound {
+    var lineCap: CAShapeLayerLineCap = CAShapeLayerLineCap.round {
         didSet {
             progressLayer.lineCap = lineCap
         }
@@ -53,7 +53,7 @@ public class LoaderAnimation: UIView {
     var animationDuration: TimeInterval = 0.3
     
     /// A CAMediaTimingFunctionName value that contains the name of timing function.
-    var timingFunctionName = kCAMediaTimingFunctionEaseOut
+    var timingFunctionName = CAMediaTimingFunctionName.easeOut
     
     // MARK: Initialization
     override init(frame: CGRect) {
