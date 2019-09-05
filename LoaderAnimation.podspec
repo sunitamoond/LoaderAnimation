@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoaderAnimation'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'Add AMnimation on Loader.'
   s.swift_version    = '5.0'
 
@@ -31,8 +31,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = '*.swift'
-  s.source_files = 'Extensions/*.swift'
+  s.source_files = '*.swift', 'Extensions/*.swift'
   
   # s.resource_bundles = {
   #   'LoaderAnimation' => ['LoaderAnimation/Assets/*.png']
