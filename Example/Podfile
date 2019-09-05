@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LoaderAnimation_Example' do
+  pod 'LoaderAnimation', :path => '../'
+
+  target 'LoaderAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
