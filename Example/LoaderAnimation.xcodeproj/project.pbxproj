@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0EC7D3B54FA29F8AD54C3116 /* Pods-LoaderAnimation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoaderAnimation_Tests.release.xcconfig"; path = "Target Support Files/Pods-LoaderAnimation_Tests/Pods-LoaderAnimation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1667A986C3A6F079281A265D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		37CB17C75D7860B1F3F5AE15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1667A986C3A6F079281A265D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		37CB17C75D7860B1F3F5AE15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3B77DF142AB8EDCFAA6E9571 /* Pods-LoaderAnimation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoaderAnimation_Example.debug.xcconfig"; path = "Target Support Files/Pods-LoaderAnimation_Example/Pods-LoaderAnimation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LoaderAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoaderAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACE51AFB9204008FA782 /* LoaderAnimation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoaderAnimation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6D8FE463B2C6798C5CC94220 /* LoaderAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LoaderAnimation.podspec; path = ../LoaderAnimation.podspec; sourceTree = "<group>"; };
+		6D8FE463B2C6798C5CC94220 /* LoaderAnimation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LoaderAnimation.podspec; path = ../LoaderAnimation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7A2BF99DE866058712AA0610 /* Pods_LoaderAnimation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoaderAnimation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD6B251A89A3DA3AEF7E62E /* Pods_LoaderAnimation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoaderAnimation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81B54F44A20FCCDAF6FC867 /* Pods-LoaderAnimation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoaderAnimation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LoaderAnimation_Tests/Pods-LoaderAnimation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				D81B54F44A20FCCDAF6FC867 /* Pods-LoaderAnimation_Tests.debug.xcconfig */,
 				0EC7D3B54FA29F8AD54C3116 /* Pods-LoaderAnimation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
