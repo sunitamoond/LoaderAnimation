@@ -29,7 +29,7 @@ public class CircularAnimation: UIView {
     }
     
     /// A UIColor value that contains the background color of line.
-    var backgroundProgressLayer: UIColor = .lightGray {
+    var backgroundProgressLayer: UIColor = AppColor.dealsGreen {
         didSet {
             progressLayer.strokeColor = backgroundProgressLayer.cgColor
         }
@@ -81,13 +81,13 @@ public class CircularAnimation: UIView {
         
         backgroundLayer.path = progressPath.cgPath
         backgroundLayer.strokeColor = backgroundProgressLayer.cgColor
-        backgroundLayer.fillColor = UIColor.clear.cgColor
+        backgroundLayer.fillColor = AppColor.primaryRedColor.cgColor
         backgroundLayer.lineWidth = lineWidth
         layer.addSublayer(backgroundLayer)
         
         progressLayer.path = progressPath.cgPath
         progressLayer.strokeColor = progressColor.cgColor
-        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.fillColor = AppColor.primaryBlackColor.cgColor
         progressLayer.lineWidth = lineWidth
         progressLayer.strokeStart = 0
         progressLayer.strokeEnd  = 0
@@ -98,7 +98,7 @@ public class CircularAnimation: UIView {
     public func createAnimation() {
         let progressAnimation = CABasicAnimation(keyPath: "strokeEnd") // 1
         progressAnimation.fromValue = 0.0 // 2
-        progressAnimation.toValue = Double(progress) / 100.0 // 3
+        progressAnimation.toValue = Double(100.0) / 100.0 // 3
         progressAnimation.duration = animationDuration
         progressAnimation.timingFunction = .init(name: timingFunctionName)
         progressLayer.strokeEnd = CGFloat(progress) / 100.0 // 4
