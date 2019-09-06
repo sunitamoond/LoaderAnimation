@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoaderAnimation'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'Add AMnimation on Loader.'
   s.swift_version    = '5.0'
 
@@ -30,16 +30,17 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
-  s.source_files = '*.swift', 'Extensions/*.swift'
-  s.default_subspec = 'Source', 'Extenstions'
+  #s.source_files = '*.swift', 'Extensions/*.swift'
+  source_files_basic = '*.swift', 'Extensions/*.swift'
+  source_files_modules = 'Module/*.swift'
+  s.default_subspec = 'Basic', 'Modules'
   
-  s.subspec 'Source' do |source|
-      source.source_files = '*.swift'
+  s.subspec 'Basic' do |basic|
+    basic.source_files = source_files_basic
   end
   
-  s.subspec 'Extenstions' do |extenstions|
-      Extenstions.source_files = 'Extensions/*.swift'
+  s.subspec 'Modules' do |modules|
+   modules.source_files = source_files_modules
   end
   
   # s.resource_bundles = {

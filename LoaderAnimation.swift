@@ -103,7 +103,6 @@ public class LoaderAnimation: UIView {
         progressAnimation.timingFunction = .init(name: timingFunctionName)
         progressLayer.strokeEnd = CGFloat(progress) / 100.0 // 4
         progressLayer.add(progressAnimation, forKey: nil) // 5
-        self.backgroundColor = AppColor.dealsBlue
     }
     
     public func setProgress(to value: Int){
